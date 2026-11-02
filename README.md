@@ -28,21 +28,21 @@ The website consists of five main pages:
 
 | Team Member | Role and Contributions |
 |---|---|
-| [Your Name] | Homepage improvements, Teams page improvements, Git workflow and documentation. |
-| [Teammate's Name] | Events page improvements, Join Us form improvements, Pull Request reviews and testing. |
+| [Irfan] | Homepage improvements, Teams page improvements, Git workflow and documentation. |
+| [Faiz] | Events page improvements, Join Us form improvements, Pull Request reviews and testing. |
 
 All team members are expected to contribute to the website, create Pull Requests, review teammates' work, and participate in the final demonstration.
 
 ## 4. Technologies Used
 
-- Laravel – Web application framework
-- Laravel Blade – Server-side templating
-- HTML – Website structure
-- CSS – Website styling and responsive layout
-- JavaScript – Interactive website features
-- Git – Version control
-- GitHub – Repository hosting and collaboration
-- Laravel Herd – Local development environment and HTTPS serving
+* Laravel – Web application framework
+* Laravel Blade – Server-side templating
+* HTML – Website structure
+* CSS – Website styling and responsive layout
+* JavaScript – Interactive website features
+* Git – Version control
+* GitHub – Repository hosting and collaboration
+* Laravel Herd – Local development environment and HTTPS serving
 
 ## 5. Running the Website Locally
 
@@ -50,19 +50,19 @@ All team members are expected to contribute to the website, create Pull Requests
 
 The following software is required:
 
-- Windows
-- Laravel Herd
-- Git
-- PHP
-- Composer
-- Visual Studio Code
+* Windows
+* Laravel Herd
+* Git
+* PHP
+* Composer
+* Visual Studio Code
 
 ### Installation Instructions
 
 1. Clone the repository:
 
    ```bash
-   git clone [PUBLIC REPOSITORY URL]
+   git clone [https://github.com/irfanrayyan8/iibgroup1-site]
    ```
 
 2. Navigate into the project directory:
@@ -147,10 +147,6 @@ As part of this assessment, the team is required to encounter and resolve at lea
 
 **Conflict details:**
 
-- File involved: [To be completed]
-- Branches involved: [To be completed]
-- Cause of conflict: [To be completed]
-- Resolution: [To be completed]
 
 The conflict was resolved by reviewing the competing changes, agreeing on the correct content, and ensuring that the website continued to function correctly.
 
@@ -162,17 +158,17 @@ All changes to the main branch are submitted through Pull Requests.
 
 | Pull Request | Description | Status |
 |---|---|---|
-| PR #1 | Homepage improvements | [Pending review / Merged] |
-| PR #2 | Teams page improvements | [Pending review / Merged] |
-| PR #3 | Events page improvements | [To be completed] |
-| PR #4 | Join Us form improvements | [To be completed] |
+| PR #1 | Homepage improvements |  |
+| PR #2 | Teams page improvements | |
+| PR #3 | Events page improvements |  |
+| PR #4 | Join Us form improvements |  |
 
 Links to the Pull Requests:
 
-- [PR #1 – Homepage Improvements](PR_LINK_1)
-- [PR #2 – Teams Page Improvements](PR_LINK_2)
-- [PR #3 – Events Page Improvements](PR_LINK_3)
-- [PR #4 – Join Us Form Improvements](PR_LINK_4)
+* [PR #1 – Homepage Improvements](https://github.com/irfanrayyan8/iibgroup1-site/pull/1)
+* [PR #2 – Teams Page Improvements](https://github.com/irfanrayyan8/iibgroup1-site/pull/2)
+* [PR #3 – Events Page Improvements](PR_LINK_3)
+* [PR #4 – Join Us Form Improvements](PR_LINK_4)
 
 ## 9. Final Release
 
@@ -191,7 +187,6 @@ The project group name is:
 
 **iibgroup1**
 
-The group name is included in the GitHub repository name and the website footer to distinguish the implementation from other groups.
 
 ## 11. Conclusion
 
