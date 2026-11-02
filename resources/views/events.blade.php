@@ -18,123 +18,125 @@
     </div>
 </section>
 
-<!-- Training Sessions -->
+<!-- Event Filters -->
 <section class="section">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Training Sessions</h2>
-            <p class="section-subtitle">Regular practice to sharpen your skills</p>
+        <div class="event-filter-bar">
+            <button class="event-filter-btn active" data-filter="all">All</button>
+            <button class="event-filter-btn" data-filter="training">Training</button>
+            <button class="event-filter-btn" data-filter="friendly">Friendly Matches</button>
+            <button class="event-filter-btn" data-filter="tournament">Tournaments</button>
         </div>
-        <div class="events-grid">
-            <div class="event-card">
+    </div>
+</section>
+
+<!-- Events Grid -->
+<section class="section">
+    <div class="container">
+        <div class="events-grid" id="eventsGrid">
+
+            <!-- Training Sessions -->
+            <div class="event-card" data-category="training" data-status="upcoming">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">05</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-upcoming">Upcoming</span>
                     <h3 class="event-title">Technical Skills Training</h3>
                     <p class="event-meta">📍 Main Court • ⏰ 6:00 PM - 8:00 PM</p>
                     <p class="event-description">Focus on passing, setting, and footwork fundamentals. Open to Development and Recreational squads.</p>
                     <span class="event-type">Training</span>
                 </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card" data-category="training" data-status="upcoming">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">12</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-upcoming">Upcoming</span>
                     <h3 class="event-title">Advanced Tactics Workshop</h3>
                     <p class="event-meta">📍 Training Hall B • ⏰ 7:00 PM - 9:00 PM</p>
                     <p class="event-description">Strategic play, blocking techniques, and offensive systems for competitive-level players.</p>
                     <span class="event-type event-type-advanced">Training - Advanced</span>
                 </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card" data-category="training" data-status="ongoing">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">19</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-ongoing">Ongoing</span>
                     <h3 class="event-title">Conditioning & Agility</h3>
                     <p class="event-meta">📍 Fitness Center • ⏰ 5:30 PM - 7:00 PM</p>
                     <p class="event-description">Volleyball-specific fitness training to enhance speed, jumping, and endurance.</p>
                     <span class="event-type">Training</span>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Friendly Matches -->
-<section class="section section-alt">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Friendly Matches</h2>
-            <p class="section-subtitle">Build team chemistry through friendly competition</p>
-        </div>
-        <div class="events-grid">
-            <div class="event-card">
+            <!-- Friendly Matches -->
+            <div class="event-card" data-category="friendly" data-status="upcoming">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">08</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-upcoming">Upcoming</span>
                     <h3 class="event-title">SpikeZone vs. Coastal Crushers</h3>
                     <p class="event-meta">📍 SpikeZone Main Court • ⏰ 3:00 PM - 6:00 PM</p>
                     <p class="event-description">Friendly exhibition match between our Competitive Squad and Coastal Crushers. All members welcome to watch!</p>
                     <span class="event-type event-type-match">Friendly Match</span>
                 </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card" data-category="friendly" data-status="completed">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">16</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-completed">Completed</span>
                     <h3 class="event-title">Mixed Teams Scrimmage</h3>
                     <p class="event-meta">📍 SpikeZone Courts 1-2 • ⏰ 4:00 PM - 6:00 PM</p>
                     <p class="event-description">Mixed squad scrimmage bringing together players from all teams for fun and camaraderie.</p>
                     <span class="event-type event-type-match">Friendly Match</span>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Tournaments -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Tournaments</h2>
-            <p class="section-subtitle">Compete and showcase your skills</p>
-        </div>
-        <div class="events-grid">
-            <div class="event-card event-card-featured">
+            <!-- Tournaments -->
+            <div class="event-card event-card-featured" data-category="tournament" data-status="upcoming">
                 <div class="event-date">
                     <span class="event-month">NOV</span>
                     <span class="event-day">22-24</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-upcoming">Upcoming</span>
                     <h3 class="event-title">Regional Autumn Classic Tournament</h3>
                     <p class="event-meta">📍 Metro Sports Complex • ⏰ All Day</p>
                     <p class="event-description">Our flagship tournament featuring teams from across the region. SpikeZone's Competitive Squad will be participating in Division 1.</p>
                     <span class="event-type event-type-tournament">Tournament</span>
                 </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card" data-category="tournament" data-status="upcoming">
                 <div class="event-date">
                     <span class="event-month">DEC</span>
                     <span class="event-day">07</span>
                 </div>
                 <div class="event-details">
+                    <span class="event-status event-status-upcoming">Upcoming</span>
                     <h3 class="event-title">Holiday Open Tournament</h3>
                     <p class="event-meta">📍 SpikeZone Sports Facility • ⏰ 9:00 AM - 6:00 PM</p>
                     <p class="event-description">One-day open tournament welcoming teams of all skill levels. Recreational squads encouraged to participate!</p>
                     <span class="event-type event-type-tournament">Tournament</span>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
-@endsection
+@endforeach
