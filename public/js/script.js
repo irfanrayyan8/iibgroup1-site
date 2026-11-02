@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('error-phone').textContent = 'Phone number is required';
                 isValid = false;
             } else {
-                const phoneRegex = /^[\d\s\-\+\(\)]+$/;
-                if (!phoneRegex.test(phone) || phone.length < 10) {
-                    document.getElementById('error-phone').textContent = 'Please enter a valid phone number';
+                const phoneRegex = /^\d+$/;
+                if (!phoneRegex.test(phone)) {
+                    document.getElementById('error-phone').textContent = 'Phone number must contain numbers only';
                     isValid = false;
                 }
             }
