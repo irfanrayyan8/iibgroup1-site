@@ -4,15 +4,15 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-background">
-        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1920&h=1080&fit=crop" alt="Volleyball players in action" class="hero-image">
+        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1920&h=1080&fit=crop" alt="SpikeZone Volleyball Club players in action" class="hero-image">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
         <h1 class="hero-title">Welcome to <span class="hero-highlight">SpikeZone</span> Volleyball Club</h1>
-        <p class="hero-subtitle">Where Passion Meets Performance. Elevate Your Game.</p>
+        <p class="hero-subtitle">Where Passion Meets Performance. Train. Compete. Belong.</p>
         <div class="hero-buttons">
             <a href="{{ url('/join') }}" class="btn btn-primary">Join Us Today</a>
-            <a href="{{ url('/about') }}" class="btn btn-secondary">Learn More</a>
+            <a href="{{ url('/about') }}" class="btn btn-secondary">Discover Our Club</a>
         </div>
     </div>
 </section>
@@ -31,20 +31,28 @@
 <!-- Statistics Section -->
 <section class="section section-alt">
     <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Club in Numbers</h2>
+            <p class="section-subtitle">Our impact and growth over the years</p>
+        </div>
         <div class="stats-grid">
             <div class="stat-card">
+                <div class="stat-icon">👥</div>
                 <div class="stat-number">150+</div>
                 <div class="stat-label">Active Members</div>
             </div>
             <div class="stat-card">
+                <div class="stat-icon">🏐</div>
                 <div class="stat-number">3</div>
                 <div class="stat-label">Competitive Teams</div>
             </div>
             <div class="stat-card">
+                <div class="stat-icon">🏆</div>
                 <div class="stat-number">25+</div>
                 <div class="stat-label">Tournaments Annually</div>
             </div>
             <div class="stat-card">
+                <div class="stat-icon">⭐</div>
                 <div class="stat-number">10+</div>
                 <div class="stat-label">Years of Excellence</div>
             </div>
@@ -52,8 +60,59 @@
     </div>
 </section>
 
-<!-- Featured Activities -->
+<!-- Upcoming Events Preview -->
 <section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="section-subtitle">Training sessions, matches and tournaments on the horizon</p>
+        </div>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="event-month">NOV</span>
+                    <span class="event-day">05</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Technical Skills Training</h3>
+                    <p class="event-meta">📍 Main Court • ⏰ 6:00 PM - 8:00 PM</p>
+                    <p class="event-description">Focus on passing, setting, and footwork fundamentals. Open to Development and Recreational squads.</p>
+                    <span class="event-type">Training</span>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="event-month">NOV</span>
+                    <span class="event-day">08</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">SpikeZone vs. Coastal Crushers</h3>
+                    <p class="event-meta">📍 SpikeZone Main Court • ⏰ 3:00 PM - 6:00 PM</p>
+                    <p class="event-description">Friendly exhibition match between our Competitive Squad and Coastal Crushers. All members welcome to watch!</p>
+                    <span class="event-type event-type-match">Friendly Match</span>
+                </div>
+            </div>
+            <div class="event-card event-card-featured">
+                <div class="event-date">
+                    <span class="event-month">NOV</span>
+                    <span class="event-day">22-24</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Regional Autumn Classic Tournament</h3>
+                    <p class="event-meta">📍 Metro Sports Complex • ⏰ All Day</p>
+                    <p class="event-description">Our flagship tournament featuring teams from across the region. SpikeZone's Competitive Squad will be participating in Division 1.</p>
+                    <span class="event-type event-type-tournament">Tournament</span>
+                </div>
+            </div>
+        </div>
+        <div class="cta-center" style="margin-top: 2.5rem;">
+            <a href="{{ url('/events') }}" class="btn btn-primary btn-large">View All Events</a>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Activities -->
+<section class="section section-alt">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Featured Activities</h2>
@@ -62,7 +121,7 @@
         <div class="cards-grid">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=800&h=500&fit=crop" alt="Training session">
+                    <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=800&h=500&fit=crop" alt="Professional training session">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Professional Training</h3>
@@ -71,7 +130,7 @@
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=500&fit=crop" alt="Competitive match">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=500&fit=crop" alt="Competitive volleyball match">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Competitive Play</h3>
@@ -80,7 +139,7 @@
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&h=500&fit=crop" alt="Team bonding">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&h=500&fit=crop" alt="Team bonding activities">
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Community & Fun</h3>
@@ -92,7 +151,7 @@
 </section>
 
 <!-- Team Highlights -->
-<section class="section section-alt">
+<section class="section">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Our Teams</h2>
@@ -113,7 +172,7 @@
             </div>
         </div>
         <div class="cta-center">
-            <a href="{{ url('/teams') }}" class="btn btn-primary">Explore Our Teams</a>
+            <a href="{{ url('/teams') }}" class="btn btn-primary btn-large">Explore Our Teams</a>
         </div>
     </div>
 </section>
