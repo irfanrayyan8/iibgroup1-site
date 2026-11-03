@@ -99,7 +99,7 @@ The following software is required:
 
 8. Open the website in a browser:
 
-   [https://iibgroup1.test](https://iibgroup1.test)
+   [https://iibgroup1-site.test](https://iibgroup1-site.test)
 
 Laravel Herd provides local HTTPS support for the development environment.
 
@@ -121,24 +121,6 @@ The `main` branch is protected, and direct pushes are not permitted.
 8. Address any feedback.
 9. Merge the Pull Request after approval.
 
-### Example Commands
-
-```bash
-git checkout main
-git pull origin main
-git checkout -b feature/example-feature
-```
-
-After making changes:
-
-```bash
-git add .
-git commit -m "Describe the implemented feature"
-git push -u origin feature/example-feature
-```
-
-A Pull Request is then created on GitHub for review and approval.
-
 ## 7. Merge Conflict Resolution
 
 A merge conflict occurs when Git cannot automatically combine changes made to the same section of a file.
@@ -146,11 +128,7 @@ A merge conflict occurs when Git cannot automatically combine changes made to th
 As part of this assessment, the team is required to encounter and resolve at least one merge conflict.
 
 **Conflict details:**
-
-
-The conflict was resolved by reviewing the competing changes, agreeing on the correct content, and ensuring that the website continued to function correctly.
-
-Evidence of the conflict and its resolution will be included in the project demonstration.
+My friend and I successfully resolved the merge conflict by discussing the differences between our changes and agreeing to combine our work based on each person's contributions. Instead of choosing one version over the other, we decided to accept my changes for the parts I had worked on and accept my friend's changes for the parts they had worked on. This allowed us to preserve both of our contributions while ensuring that the final code contained the correct content from each of us. By communicating and cooperating throughout the process, we were able to resolve the merge conflict smoothly without losing any important work.
 
 ## 8. Pull Request Contributions
 
@@ -158,17 +136,17 @@ All changes to the main branch are submitted through Pull Requests.
 
 | Pull Request | Description | Status |
 |---|---|---|
-| PR #1 | Homepage improvements |  |
-| PR #2 | Teams page improvements | |
-| PR #3 | Events page improvements |  |
-| PR #4 | Join Us form improvements |  |
+| PR #1 | Homepage improvements | merged |
+| PR #2 | Teams page improvements | merged |
+| PR #3 | Events page improvements | merged |
+| PR #4 | Join Us form improvements | merged |
 
 Links to the Pull Requests:
 
 * [PR #1 – Homepage Improvements](https://github.com/irfanrayyan8/iibgroup1-site/pull/1)
 * [PR #2 – Teams Page Improvements](https://github.com/irfanrayyan8/iibgroup1-site/pull/2)
-* [PR #3 – Events Page Improvements](PR_LINK_3)
-* [PR #4 – Join Us Form Improvements](PR_LINK_4)
+* [PR #3 – Events Page Improvements](https://github.com/irfanrayyan8/iibgroup1-site/tree/feature/event-filters)
+* [PR #4 – Join Us Form Improvements](https://github.com/irfanrayyan8/iibgroup1-site/tree/feature/join-form-validation)
 
 ## 9. Final Release
 
