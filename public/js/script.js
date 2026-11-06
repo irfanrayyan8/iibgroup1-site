@@ -119,6 +119,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Event filter (Events page)
+    var filterButtons = document.querySelectorAll('.event-filter-btn');
+    var eventCards = document.querySelectorAll('.event-card');
+    if (filterButtons.length && eventCards.length) {
+        console.log('Event filter setup: ' + filterButtons.length + ' buttons, ' + eventCards.length + ' cards');
+
+        filterButtons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var filter = this.getAttribute('data-filter');
+                console.log('Button clicked: ' + filter);
+
+                filterButtons.forEach(function(b) { b.classList.remove('active'); });
+                this.classList.add('active');
+
+                var visibleCount = 0;
+                eventCards.forEach(function(card) {
+                    var cat = card.getAttribute('data-category');
+                    if (filter === 'all' || cat === filter) {
+                        card.style.display = '';
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.add('hidden');
+                    }
+                });
+                console.log('Visible cards: ' + visibleCount);
+            });
+        });
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {

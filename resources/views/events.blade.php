@@ -19,7 +19,7 @@
 </section>
 
 <!-- Event Filters -->
-<section class="section">
+<section class="section section-filter">
     <div class="container">
         <div class="event-filter-bar">
             <button class="event-filter-btn active" data-filter="all">All</button>
@@ -140,30 +140,4 @@
     </div>
 </section>
 
-<script>
-window.onload = function() {
-    var buttons = document.querySelectorAll('.event-filter-btn');
-    var cards = document.querySelectorAll('.event-card');
-
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].onclick = function() {
-            var filter = this.getAttribute('data-filter');
-
-            for (var j = 0; j < buttons.length; j++) {
-                buttons[j].classList.remove('active');
-            }
-            this.classList.add('active');
-
-            for (var k = 0; k < cards.length; k++) {
-                var cat = cards[k].getAttribute('data-category');
-                if (filter === 'all' || cat === filter) {
-                    cards[k].style.display = '';
-                } else {
-                    cards[k].style.display = 'none';
-                }
-            }
-        };
-    }
-};
-</script>
 @endsection

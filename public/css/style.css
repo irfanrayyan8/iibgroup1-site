@@ -740,12 +740,17 @@ body {
     gap: 1.9rem;
 }
 
+.section-filter {
+    padding: 1rem 0;
+}
+
 .event-filter-bar {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .event-filter-btn {
@@ -754,43 +759,11 @@ body {
     background-color: var(--white);
     color: var(--navy);
     border-radius: 30px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: inherit;
-}
-
-.event-filter-btn:hover {
-    border-color: var(--orange);
-    color: var(--orange);
-}
-
-.event-filter-btn.active {
-    background-color: var(--orange);
-    border-color: var(--orange);
-    color: var(--white);
-}
-
-.event-filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.event-filter-btn {
-    padding: 0.6rem 1.4rem;
-    border: 2px solid var(--border-color);
-    background-color: var(--white);
-    color: var(--navy);
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: inherit;
 }
 
 .event-filter-btn:hover {
