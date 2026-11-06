@@ -126,37 +126,38 @@
             <strong>Demonstration Form:</strong> This form is for demonstration purposes only. It does not actually submit or store enquiries.
         </div>
         <form class="enquiry-form" id="enquiryForm" novalidate>
+            <p class="form-required-note"><span class="required-asterisk">*</span> Required fields</p>
             <div class="form-row">
                 <div class="form-group">
-                    <label for="firstName" class="form-label">First Name *</label>
+                    <label for="firstName" class="form-label">First Name <span class="required-asterisk">*</span></label>
                     <input type="text" id="firstName" name="firstName" class="form-input" required>
                     <span class="form-error" id="error-firstName"></span>
                 </div>
                 <div class="form-group">
-                    <label for="lastName" class="form-label">Last Name *</label>
+                    <label for="lastName" class="form-label">Last Name <span class="required-asterisk">*</span></label>
                     <input type="text" id="lastName" name="lastName" class="form-input" required>
                     <span class="form-error" id="error-lastName"></span>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
-                    <label for="email" class="form-label">Email Address *</label>
+                    <label for="email" class="form-label">Email Address <span class="required-asterisk">*</span></label>
                     <input type="email" id="email" name="email" class="form-input" required>
                     <span class="form-error" id="error-email"></span>
                 </div>
                 <div class="form-group">
-                    <label for="phone" class="form-label">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                    <label for="phone" class="form-label">Phone Number <span class="required-asterisk">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder="e.g. 5551234567">
                     <span class="form-error" id="error-phone"></span>
                 </div>
             </div>
             <div class="form-group">
-                <label for="age" class="form-label">Age *</label>
+                <label for="age" class="form-label">Age <span class="required-asterisk">*</span></label>
                 <input type="number" id="age" name="age" class="form-input" min="12" max="65" required>
                 <span class="form-error" id="error-age"></span>
             </div>
             <div class="form-group">
-                <label for="experience" class="form-label">Volleyball Experience *</label>
+                <label for="experience" class="form-label">Volleyball Experience <span class="required-asterisk">*</span></label>
                 <select id="experience" name="experience" class="form-select" required>
                     <option value="">Select experience level</option>
                     <option value="beginner">Complete Beginner</option>
@@ -167,7 +168,7 @@
                 <span class="form-error" id="error-experience"></span>
             </div>
             <div class="form-group">
-                <label for="teamInterest" class="form-label">Team of Interest *</label>
+                <label for="teamInterest" class="form-label">Team of Interest <span class="required-asterisk">*</span></label>
                 <select id="teamInterest" name="teamInterest" class="form-select" required>
                     <option value="">Select team</option>
                     <option value="development">Development Squad</option>
@@ -181,7 +182,7 @@
                 <label for="message" class="form-label">Message (Optional)</label>
                 <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your goals or any questions you have..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Enquiry</button>
+            <button type="submit" class="btn btn-primary btn-large">Submit Enquiry</button>
             <div id="formSuccess" class="form-success" style="display: none;">
                 Thank you for your interest in SpikeZone Volleyball Club! This is a demonstration form - no data was actually submitted.
             </div>
