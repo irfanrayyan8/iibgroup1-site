@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('error-phone').textContent = 'Phone number is required';
                 isValid = false;
             } else {
-                const phoneRegex = /^[\d\s\-\+\(\)]+$/;
-                if (!phoneRegex.test(phone) || phone.length < 10) {
-                    document.getElementById('error-phone').textContent = 'Please enter a valid phone number';
+                const phoneRegex = /^\d+$/;
+                if (!phoneRegex.test(phone)) {
+                    document.getElementById('error-phone').textContent = 'Phone number must contain numbers only';
                     isValid = false;
                 }
             }
@@ -129,30 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
             }
-        });
-    });
-
-    // Event Category Filters
-    const filterButtons = document.querySelectorAll('.event-filter-btn');
-    const eventCards = document.querySelectorAll('.event-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            // Show/hide cards
-            eventCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
         });
     });
 });
