@@ -131,28 +131,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // Event Category Filters
-    const filterButtons = document.querySelectorAll('.event-filter-btn');
-    const eventCards = document.querySelectorAll('.event-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            // Show/hide cards
-            eventCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-        });
-    });
 });
