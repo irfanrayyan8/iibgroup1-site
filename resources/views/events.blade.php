@@ -141,29 +141,41 @@
 </section>
 
 <script>
-window.onload = function() {
-    var buttons = document.querySelectorAll('.event-filter-btn');
-    var cards = document.querySelectorAll('.event-card');
+(function() {
+    function initFilters() {
+        var filterButtons = document.querySelectorAll('.event-filter-btn');
+        var eventCards = document.querySelectorAll('.event-card');
 
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].onclick = function() {
-            var filter = this.getAttribute('data-filter');
+        if (filterButtons.length === 0 || eventCards.length === 0) {
+            return;
+        }
 
-            for (var j = 0; j < buttons.length; j++) {
-                buttons[j].classList.remove('active');
-            }
-            this.classList.add('active');
+        filterButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var filter = this.getAttribute('data-filter');
 
-            for (var k = 0; k < cards.length; k++) {
-                var cat = cards[k].getAttribute('data-category');
-                if (filter === 'all' || cat === filter) {
-                    cards[k].style.display = '';
-                } else {
-                    cards[k].style.display = 'none';
-                }
-            }
-        };
+                filterButtons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                eventCards.forEach(function(card) {
+                    var category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
     }
-};
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initFilters);
+    } else {
+        initFilters();
+    }
+})();
 </script>
 @endsection
